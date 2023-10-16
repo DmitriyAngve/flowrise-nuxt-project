@@ -22,7 +22,7 @@ export default defineNuxtConfig({
 
   css: ["@fontsource-variable/nunito", "@fontsource-variable/nunito-sans"],
 
-  modules: ["@nuxtjs/prismic"],
+  modules: ["@nuxtjs/prismic", "@nuxtjs/tailwindcss"],
 
   prismic: {
     endpoint: "flowrise-nuxt-project",
