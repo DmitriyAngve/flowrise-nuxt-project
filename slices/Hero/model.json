@@ -51,8 +51,8 @@
             "label": "Image",
             "thumbnails": [],
             "constraint": {
-              "height": null,
-              "width": null
+              "height": 720,
+              "width": 1280
             }
           }
         }
