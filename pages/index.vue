@@ -8,6 +8,7 @@ const { data: page } = useAsyncData("index", () =>
 
 useSeoMeta({
   // Устанавливаю заголовок страницы на основе "page.value?.data.meta_title". Это для управления мета тегами SEO для каждой страницы в приложении.
+
   title: page.value?.data.meta_title ?? undefined,
   description: page.value?.data.meta_description ?? undefined,
   ogImage: prismic.asImageSrc(page.value?.data.meta_image) ?? undefined,
