@@ -48,12 +48,12 @@
         "image": {
           "type": "Image",
           "config": {
+            "label": "Image",
             "thumbnails": [],
             "constraint": {
-              "height": 720,
-              "width": 1280
-            },
-            "label": "Image"
+              "height": null,
+              "width": null
+            }
           }
         }
       },
