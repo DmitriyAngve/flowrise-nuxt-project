@@ -41,7 +41,7 @@ defineProps(
         />
         <PrismicRichText
           :field="item.description"
-          class="text-base font-medium font-body text-slate-600"
+          class="text-base font-medium font-body text-slate-600 leading-relaxed"
         />
       </div>
     </div>
