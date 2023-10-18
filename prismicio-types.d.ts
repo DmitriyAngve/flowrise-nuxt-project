@@ -193,10 +193,14 @@ export interface FeaturesSliceDefaultItem {
    *
    * - **Field Type**: Select
    * - **Placeholder**: *None*
+   * - **Default Value**: calendar
    * - **API ID Path**: features.items[].icon
    * - **Documentation**: https://prismic.io/docs/field#select
    */
-  icon: prismic.SelectField<"calendar" | "bargraph" | "clover" | "hourglass">;
+  icon: prismic.SelectField<
+    "calendar" | "bargraph" | "clover" | "hourglass",
+    "filled"
+  >;
 
   /**
    * Title field in *Features → Items*

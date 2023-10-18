@@ -33,7 +33,8 @@
               "bargraph",
               "clover",
               "hourglass"
-            ]
+            ],
+            "default_value": "calendar"
           }
         },
         "title": {
