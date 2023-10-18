@@ -23,15 +23,26 @@ defineProps(
       wrapper="h2"
       class="heading heading--md mb-12 text-center"
     />
-    <div class="grid sm:grid-cols-2 lg:grid-cols-4">
-      <div v-for="item of slice.items" :key="item.icon ?? ''">
-        {{ item.icon }}
+    <div
+      class="grid sm:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-12 max-w-5xl mx-auto sm:place-items-start place-items-center"
+    >
+      <div
+        v-for="item of slice.items"
+        :key="item.icon ?? ''"
+        class="max-w-xs grid sm:place-items-start place-items-center text-center sm:text-left"
+      >
+        <div v-if="item.icon">
+          <Icon :name="item.icon" class="mb-5" />
+        </div>
         <PrismicText
           :field="item.title"
           wrapper="h3"
           class="heading heading--sm !font-medium pb-3"
         />
-        <PrismicRichText :field="item.description" />
+        <PrismicRichText
+          :field="item.description"
+          class="text-base font-medium font-body text-slate-600"
+        />
       </div>
     </div>
   </Bounded>
