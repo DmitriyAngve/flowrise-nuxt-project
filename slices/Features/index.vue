@@ -18,7 +18,7 @@ defineProps(
     :data-slice-type="slice.slice_type"
     :data-slice-variation="slice.variation"
   >
-    <PrismicRichText
+    <PrismicText
       :field="slice.primary.heading"
       wrapper="h2"
       class="heading heading--md mb-12 text-center"
