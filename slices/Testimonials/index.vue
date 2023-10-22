@@ -33,6 +33,33 @@ const testimonials = computed(() => {
       wrapper="h2"
       class="heading heading--md mb-12 text-center"
     />
-    {{ testimonials[0].data }}
+    <div class="grid lg:grid-cols-3 grid-cols-1 gap-8">
+      <div
+        v-for="testimonial of testimonials"
+        :key="testimonial.data.name ?? ''"
+      >
+        <PrismicRichText
+          :field="testimonial.data.quote"
+          class="text-2xl font-body text-slate-700 mb-8"
+        />
+        <div class="flex items-center">
+          <PrismicImage
+            width="56"
+            height="56"
+            :field="testimonial.data.avatar"
+            class="rounded-full mr-4 aspect-square"
+          />
+          <div>
+            <p class="text-base font-medium text-slate-700">
+              {{ testimonial.data.name }}
+            </p>
+            <p class="text-base text-slate-500">
+              {{ testimonial.data.job_title }}
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </div>
   </Bounded>
 </template>
