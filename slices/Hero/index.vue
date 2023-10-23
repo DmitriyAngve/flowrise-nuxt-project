@@ -31,8 +31,8 @@ defineProps(
         }"
       >
         <PrismicRichText
+          class="heading heading--xl md:mb-8 mb-4"
           :field="slice.primary.heading"
-          class="heading heading--xl mb-4 md:mb-8"
         />
         <PrismicRichText
           class="text-2xl font-normal leading-10 font-body text-slate-600 max-w-md mb-4 md:mb-8"
