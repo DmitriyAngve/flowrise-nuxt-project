@@ -37,10 +37,11 @@ const testimonials = computed(() => {
       <div
         v-for="testimonial of testimonials"
         :key="testimonial.data.name ?? ''"
+        class="bg-white shadow-lg rounded-lg px-8 md:px-14 py-10 md:py-16 grid content-between"
       >
         <PrismicRichText
           :field="testimonial.data.quote"
-          class="text-2xl font-body text-slate-700 mb-8"
+          class="text-2xl font-body text-slate-700 mb-8 leading-10"
         />
         <div class="flex items-center">
           <PrismicImage
@@ -56,7 +57,6 @@ const testimonials = computed(() => {
             <p class="text-base text-slate-500">
               {{ testimonial.data.job_title }}
             </p>
-            
           </div>
         </div>
       </div>
