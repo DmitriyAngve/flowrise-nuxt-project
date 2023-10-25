@@ -15,12 +15,8 @@ This dummy website repository is built with the following technologies:
 
 ## Features:
 
-- Tailwind design, animations, effects and responsive
+- Key features of Prismic: Structured content, API-first, content reusability, rich media support, localization, custom fields, developer-friendly, flexible integrations, SaaS platform, user-friendly interface, active community, versioning.
 
-
-### Prerequisites
-
-**Node version 18.x.x**
 
 ## Installation and Usage
 
@@ -36,45 +32,11 @@ git clone https://github.com/DmitriyAngve/sass-ai
 npm i
 ```
 
-### 3. Setup .env file
-
-```js
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
-CLERK_SECRET_KEY=
-
-NEXT_PUBLIC_CLERK_SIGN_IN_URL=/sign-in
-NEXT_PUBLIC_CLERK_SIGN_UP_URL=/sign-up
-NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL=/dashboard
-NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL=/dashboard
-
-OPENAI_API_KEY=
-REPLICATE_API_TOKEN=
-
-DATABASE_URL=
-
-STRIPE_API_KEY=
-STRIPE_WEBHOOK_SECRET=
-
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-```
-
-### 4. Setup Prisma
-
-Add MySQL Database (I used PlanetScale)
-
-```shell
-npx prisma db push
-```
-
-### 5. Start the app
+### 3. Start the app
 
 ```shell
 npm run dev
 ```
-
-## 6. Available commands
-
-Running commands with npm `npm run [command]`
 
 | command         | description                              |
 | :-------------- | :--------------------------------------- |
