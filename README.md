@@ -11,7 +11,7 @@ This dummy website repository is built with the following technologies:
 - **Tailwind CSS**: A utility-first CSS framework for simplified and consistent styling.
 
 
-[Explore the Live Demo](https://flowrise-nuxt-project-pdqe4tx2k-dmitriyangve.vercel.app/)
+[Explore the Live Demo](https://flowrise-nuxt-project-pdqe4tx2k-dmitriyangve.vercel.app)
 
 ## Features:
 
