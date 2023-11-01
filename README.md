@@ -23,7 +23,7 @@ This dummy website repository is built with the following technologies:
 ### 1. Cloning the repository
 
 ```shell
-git clone https://github.com/DmitriyAngve/sass-ai
+git clone https://github.com/DmitriyAngve/flowrise-nuxt-project
 ```
 
 ### 2. Install packages
